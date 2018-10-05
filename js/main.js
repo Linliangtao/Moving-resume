@@ -1,6 +1,3 @@
-var text = "body{color:red;}"
-
-
 var result = `/* 
  * 面试官你好，我是林良涛
  * 只用文字作做自我介绍太单调了
@@ -18,6 +15,16 @@ html{
   border: 1px solid #aaa;
   padding: 16px;
 }
+/* 我需要一点代码高亮 */
+.token.selector{
+  color:#690;
+}
+.token.property{
+  color:#905;
+}
+.token.function{
+  color:#DD4A68;
+}
 `
 
 
@@ -33,4 +40,4 @@ var id = setInterval(()=>{
     if(n >= result.length){
         window.clearInterval(id)
     }
-},10)
+},20)
