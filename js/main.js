@@ -33,17 +33,21 @@ html{
 
 
 /* 加点 3D 效果呗 */
+/*我翻转一下，就是皮*/
+#code{
+  transform:rotateY(360deg);
+}
+/* 好了，稳定了*/
 html{
   perspective: 1000px;
 }
-#code {
+#code{
   position: fixed; left: 0; top: 0;
   -webkit-transition: none;
   transition: none;
   -webkit-transform: rotateY(10deg) translateZ(-100px) ;
-          transform: rotateY(10deg) translateZ(-100px) ;
+          transform: rotateY(10deg) translateZ(-100px) ;         
 }
-
 
 /* 好了，我来介绍我自己吧 */
 /* 我需要一张白纸 */
@@ -52,7 +56,16 @@ html{
   height:100px;
   background:red;
 }
-
+/**/
+#paper{
+  position: fixed; right: 0; top: 0;
+  padding: .5em;  margin: .5em;
+  width: 48vw; height: 90vh;
+  border: 1px solid;
+  background: white; color: #222;
+  overflow: auto;
+}
+}
 `
 
 
@@ -70,7 +83,7 @@ var id = setInterval(()=>{
         fn2()
         fn3()
     }
-},10)
+},50)
 
 function fn2(){
   var paper = document.createElement('div')
@@ -93,5 +106,5 @@ function fn3(preResult){
     if(n >= result.length){
       window.clearInterval(id)
     }
-  },10)
+  },50)
 }

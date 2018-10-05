@@ -9,3 +9,7 @@
 .token.function{
     color:white;
   }
+  #code{
+      height:100vh;
+      overflow: hidden;
+  }
