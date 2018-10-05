@@ -11,7 +11,7 @@ function writeCss(prefix, code, fn){
       window.clearInterval(id)
       fn && fn.call()
     }
-  }, 0)
+  }, 70)
 }
 function writeMarkdown(markdown, fn){
   let domPaper = document.querySelector('#paper>.content')
@@ -24,7 +24,7 @@ function writeMarkdown(markdown, fn){
       window.clearInterval(id)
       fn && fn.call()
     }
-  }, 0)
+  }, 80)
 }
 
 var css1 = `/* 
@@ -103,12 +103,15 @@ var md = `
 软件技术专业
 自学前端半年
 希望应聘前端开发岗位
+
 # 技能介绍
 熟悉 JavaScript CSS
+
 # 项目介绍
 - 苹果轮播
 - 在线简历
 - canvas画板
+
 # 联系方式
 - QQ 142xxxx601
 - Email 142xxxx601@qq.com
