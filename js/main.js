@@ -11,7 +11,7 @@ function writeCss(prefix, code, fn){
       window.clearInterval(id)
       fn && fn.call()
     }
-  }, 70)
+  }, 0)
 }
 function writeMarkdown(markdown, fn){
   let domPaper = document.querySelector('#paper>.content')
@@ -24,7 +24,7 @@ function writeMarkdown(markdown, fn){
       window.clearInterval(id)
       fn && fn.call()
     }
-  }, 10)
+  }, 0)
 }
 
 var css1 = `/* 
@@ -66,7 +66,7 @@ html{
 #code{
   transform:rotateY(360deg);
 }
-/* 好了，稳定了*/
+/*再皮一下*/
 html{
   perspective: 1000px;
 }
@@ -84,7 +84,6 @@ html{
   position: fixed; right: 0; top: 0;
   padding: .5em;  margin: .5em;
   width: 48vw; height: 90vh;
-  border: 1px solid;
   background: white; color: #222;
   overflow: auto;
 }
@@ -97,22 +96,23 @@ var css2 = `
  */
 `
 var md = `
-# 自我介绍
-我叫 林良涛
-1990 年 1 月出生
-XXX 学校毕业
+
+# 林良涛
+1997 年 2 月出生
+广州城建职业学院毕业
+软件技术专业
 自学前端半年
 希望应聘前端开发岗位
 # 技能介绍
 熟悉 JavaScript CSS
 # 项目介绍
-1. XXX 轮播
-2. XXX 简历
-3. XXX 画板
+- 苹果轮播
+- 在线简历
+- canvas画板
 # 联系方式
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
+- QQ 142xxxx601
+- Email 142xxxx601@qq.com
+- 手机 131xxxxx129
 
 `
 let css3 = `
