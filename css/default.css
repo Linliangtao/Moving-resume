@@ -1,13 +1,17 @@
 *{margin: 0;padding: 0;}
 *{box-sizing: border-box;}
+html{
+    background:#EEEEEE;
+    font-size: 20px;
+}
 .token.selector{
-    color:white;
+    color:black;
   }
 .token.property{
-    color:white;
+    color:black;
   }
 .token.function{
-    color:white;
+    color:black;
   }
   #code{
       height:100vh;

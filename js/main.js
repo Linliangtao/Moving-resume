@@ -45,7 +45,13 @@ html{
   border: 1px solid #aaa;
   padding: 16px;
 }
-/* 文字离边框太近了 */
+/* 我需要一点代码高亮 */
+.token.selector{ color: rgb(133,153,0); }
+.token.property{ color: rgb(187,137,0); }
+.token.punctuation{ color: yellow; }
+.token.function{ color: rgb(42,161,152); }
+
+/* 文字离边框太远了 */
  #code {
   padding: .5em;
   border: 1px solid;
@@ -53,15 +59,9 @@ html{
   overflow: auto;
   width: 45vw; height: 90vh;
 }
-/* 我需要一点代码高亮 */
-.token.selector{ color: rgb(133,153,0); }
-.token.property{ color: rgb(187,137,0); }
-.token.punctuation{ color: yellow; }
-.token.function{ color: rgb(42,161,152); }
 
 
-
-/* 加点 3D 效果呗 */
+/* 加点 3D动画 效果呗 */
 /*我翻转一下，就是皮*/
 #code{
   transform:rotateY(360deg);
@@ -75,7 +75,7 @@ html{
   -webkit-transition: none;
   transition: none;
   -webkit-transform: rotateY(10deg) translateZ(-100px) ;
-          transform: rotateY(10deg) translateZ(-100px) ;         
+                  
 }
 
 /* 好了，我来介绍我自己吧 */
@@ -98,7 +98,7 @@ var css2 = `
 `
 var md = `
 # 自我介绍
-我叫 XXX
+我叫 林良涛
 1990 年 1 月出生
 XXX 学校毕业
 自学前端半年
